@@ -1,23 +1,6 @@
-import { eld } from '@yutengjing/eld';
+import { eld } from 'eld/large';
 
 import { LanguageDetectionResult } from '../types';
-
-// 语言检测器初始化Promise，确保只初始化一次
-let initPromise: Promise<void> | null = null;
-
-/**
- * 初始化 ELD 语言检测器
- */
-export async function initializeELD(): Promise<void> {
-  if (!initPromise) {
-    initPromise = (async () => {
-      console.log('🔧 Initializing ELD language detector...');
-      await eld.init('L'); // 使用中等规模的数据集
-      console.log('✅ ELD language detector initialized');
-    })();
-  }
-  return initPromise;
-}
 
 /**
  * 检测文本的语言
@@ -31,9 +14,6 @@ export async function detectLanguage(text: string): Promise<LanguageDetectionRes
       scores: {},
     };
   }
-
-  // 确保 ELD 已初始化
-  await initializeELD();
 
   const result = eld.detect(text);
   const scores = result.getScores();
