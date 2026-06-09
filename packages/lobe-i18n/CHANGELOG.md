@@ -2,6 +2,31 @@
 
 # Changelog
 
+## [Version 1.27.0](https://github.com/lobehub/lobe-cli-toolbox/compare/@lobehub/i18n-cli@1.26.1...@lobehub/i18n-cli@1.27.0)
+
+<sup>Released on **2026-06-09**</sup>
+
+#### ✨ Features
+
+- **misc**: Using ELD version 2, with static import, instead of fork with await..
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Using ELD version 2, with static import, instead of fork with await., closes [#165](https://github.com/lobehub/lobe-cli-toolbox/issues/165) ([795c8ce](https://github.com/lobehub/lobe-cli-toolbox/commit/795c8ce))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.26.1](https://github.com/lobehub/lobe-cli-toolbox/compare/@lobehub/i18n-cli@1.26.0...@lobehub/i18n-cli@1.26.1)
 
 <sup>Released on **2026-02-15**</sup>
